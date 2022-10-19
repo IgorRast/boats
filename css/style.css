@@ -1,0 +1,150 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #262C27;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+.container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.header {
+    background-image: url(../images/boath.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    position: relative;
+}
+.header::before{
+    content: "";
+    position: absolute;
+    background-image: url(../images/Vectortree.svg);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 356px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateY(50%);
+    z-index: 2;
+}
+.header::after{
+    content: "";
+    position: absolute;
+    background-image: url(../images/Vectortree.svg);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 356px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateY(80%) rotate(180deg);
+    z-index: 3;
+}
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 100px;
+    padding: 57px 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+}
+.logo path {
+    transition: fill .3s ease;
+}
+.logo:hover path {
+    fill: #0093A1;
+}
+.header-btn {
+    font-family: 'Comfortaa', cursive;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #262C27;
+    border: none;
+    cursor: pointer;
+    padding: 12px 71px;
+}
+.header-content {
+    min-height: calc(100vh - 180px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+.header-content-box {
+    max-width: 550px;
+    text-align: center;
+    
+    color: #fff; 
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+  
+}
+.header-title {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 64px;
+    line-height: 71px;
+}
+.header-text {
+    font-size: 24px;
+    line-height: 27px;
+    margin-bottom: 20px;
+}
+.header-decor-text {
+    position: absolute;
+    bottom: 10px;
+    color: #0093A1;
+}
+ .one {
+    z-index: 1;
+    right: 145px;
+    bottom: 0px;
+}
+ .one,
+ .two {
+    
+    font-size: 130px;
+    line-height: 145px;
+    font-family: 'Comfortaa', cursive;
+    opacity: 0.3;
+}
+ .two {
+    z-index: 4;
+    left: 265px;
+    bottom: -150px;
+}
+ .three {
+    max-width: 360px;
+    right: 145px;
+    z-index: 4;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 39px;
+    font-style: italic;
+    text-align: center;
+    bottom: -130px;
+}
